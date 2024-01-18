@@ -18,13 +18,13 @@ export default function Nav() {
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       shouldHideOnScroll
-      className="bg-default-50"
+      className="dark z-0"
     >
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
 
         <NavbarBrand >
-          <p className="font-bold ">COACHING BY ARI</p>
+          <p className="font-bold ">COACHING BY  ARI</p>
         </NavbarBrand>
       </NavbarContent>
 
@@ -34,19 +34,19 @@ export default function Nav() {
 
 
 
-        <NavbarContent className="hidden sm:flex gap-12" justify="center">
+        <NavbarContent className="hidden sm:flex gap-12 " justify="center">
         <NavbarItem >
-          <Link color="foreground" href="#">
+          <Link className="text-white" href="#">
             About
           </Link>
         </NavbarItem>
         <NavbarItem >
-          <Link href="#" color="foreground" >
+          <Link href="#" className="text-white" >
             Services
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link className="text-white" href="#">
             Testimonials
           </Link>
         </NavbarItem>
@@ -55,18 +55,19 @@ export default function Nav() {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
+          <Button as={Link} color="secondary" href="#" variant="flat" className="text-white">
             Contact
           </Button>
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu className="bg-transparent dark">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              className="w-full"
+              className="w-full text-white dark "
               size="lg"
+             
             >
               {item}
             </Link>
