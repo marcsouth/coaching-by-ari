@@ -62,17 +62,81 @@ export default function Nav() {
       </NavbarContent>
 
       <NavbarMenu className="bg-transparent dark">
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              className="w-full text-white dark "
-              size="lg"
-             
-            >
-              {item}
-            </Link>
-          </NavbarMenuItem>
-        ))}
+        {/* Hard code each link */}
+        <NavbarMenuItem>
+          <Link
+            className="w-full text-white dark"
+            size="lg"
+            href="/about"
+          >
+            About
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            className="w-full text-white dark"
+            size="lg"
+            href="/services"
+          >
+            Services
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            className="w-full text-white dark"
+            size="lg"
+            href="/testimonials"
+          >
+            Testimonials
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            className="w-full text-white dark"
+            size="lg"
+            href="/contact"
+          >
+            Contact
+          </Link>
+        </NavbarMenuItem>
+
+        {/* Add custom links */}
+        <NavbarMenuItem>
+          <Link
+          showAnchorIcon
+            className="w-full dark"
+            size="lg"
+            href='https://www.tiktok.com/@amwbrah'
+            color='secondary'
+            isExternal
+          >
+            Tik Tok
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+          showAnchorIcon
+            className="w-full dark"
+            size="lg"
+            color='secondary'
+            href='https://www.instagram.com/aesthetics.by.ari/'
+            isExternal
+          >
+            Instagram
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+          showAnchorIcon
+            className="w-full dark"
+            size="lg"
+            color='secondary'
+            href="https://www.youtube.com/@Amwbrah"
+            isExternal
+          >
+            Youtube
+          </Link>
+        </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>
   );

@@ -14,27 +14,27 @@ export default function OutlinedTimeline() {
           <TimelineDot variant="outlined" />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent><span className='font-bold text-pink-400 text-lg'>2012</span> started my fitness journey</TimelineContent>
+        <TimelineContent><span className='font-bold primary  text-lg'>2012</span> started my fitness journey</TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot variant="outlined" color="primary" />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent><span className='font-bold text-pink-400 text-lg'>2016</span> started taking clients</TimelineContent>
+        <TimelineContent><span className='font-bold primary  text-lg'>2016</span> started taking clients</TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot variant="outlined" color="secondary" />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent><span className='font-bold text-pink-400 text-lg'>2020</span> Won my first championship</TimelineContent>
+        <TimelineContent><span className='font-bold primary text-lg'>2020</span> Won my first championship</TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot variant="outlined" />
         </TimelineSeparator>
-        <TimelineContent><span className='font-bold text-pink-400 text-lg'>2024</span> got my first sponsorship</TimelineContent>
+        <TimelineContent><span className='font-bold primary text-lg'>2024</span> got my first sponsorship</TimelineContent>
       </TimelineItem>
       
       
