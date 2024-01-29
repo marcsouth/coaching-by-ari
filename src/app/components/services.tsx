@@ -7,7 +7,7 @@ import { GiMeal } from "react-icons/gi";
 export default function Services() {
   return (
     <>
-      <div className=" px-4 mx-auto flex mb-20">
+      <div className=" px-4 mx-auto flex ">
         <div className="text-center mx-auto w-full ">
           <div className="flex w-full gap-8 flex-wrap max-w-600 mx-auto justify-center items-center max-w-6xl">
             <div className=" shadow-white shadow-inner bg-gradient-to-r from-white to-gray-700 rounded-xl p-0.5 max-w-md h-full ">
