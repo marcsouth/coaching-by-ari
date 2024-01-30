@@ -15,6 +15,9 @@ export default function accordian() {
       <AccordionItem key="3" aria-label="Accordion 3" title="When can I start?">
       <p className="text-gray-400 font-normal">{defaultContent}</p> 
       </AccordionItem>
+      <AccordionItem key="3" aria-label="Accordion 3" title="What is BMI and why is it important?">
+      <p className="text-gray-400 font-normal">{defaultContent}</p> 
+      </AccordionItem>
     </Accordion>
   );
 }

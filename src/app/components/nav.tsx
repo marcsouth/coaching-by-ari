@@ -24,30 +24,34 @@ export default function Nav() {
         <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
 
         <NavbarBrand >
+          <Link href='/' className="text-white">
           <p className="font-bold ">COACHING BY  ARI</p>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarBrand >
+      <Link href='/' className="text-white">
           <p className="font-bold max-sm:hidden ">COACHING BY ARI</p>
+          </Link>
         </NavbarBrand>
 
 
 
         <NavbarContent className="hidden sm:flex gap-12 " justify="center">
         <NavbarItem >
-          <Link className="text-white" href="#">
+          <Link className="text-white" href="#about">
             About
           </Link>
         </NavbarItem>
         <NavbarItem >
-          <Link href="#" className="text-white" >
+          <Link href="#services" className="text-white" >
             Services
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-white" href="#">
-            Testimonials
+          <Link className="text-white" href="#faq">
+          F.A.Q
           </Link>
         </NavbarItem>
       </NavbarContent>
@@ -55,7 +59,7 @@ export default function Nav() {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="secondary" href="#" variant="flat" className="text-white">
+          <Button as={Link} color="secondary" href="#contact" variant="flat" className="text-white">
             Contact
           </Button>
         </NavbarItem>
@@ -67,7 +71,7 @@ export default function Nav() {
           <Link
             className="w-full text-white dark"
             size="lg"
-            href="/about"
+            href="#about"
           >
             About
           </Link>
@@ -76,7 +80,7 @@ export default function Nav() {
           <Link
             className="w-full text-white dark"
             size="lg"
-            href="/services"
+            href="#services"
           >
             Services
           </Link>
@@ -85,16 +89,16 @@ export default function Nav() {
           <Link
             className="w-full text-white dark"
             size="lg"
-            href="/testimonials"
+            href="#faq"
           >
-            Testimonials
+            F.A.Q
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
           <Link
             className="w-full text-white dark"
             size="lg"
-            href="/contact"
+            href="#faq"
           >
             Contact
           </Link>
