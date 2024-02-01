@@ -22,7 +22,10 @@ export default function Home() {
   </div>
 </div>
 
-<div className=" my-8 px-4 m-auto max-w-7xl flex gap-4  w-full items-center justify-evenly max-md:flex-col" id='about'>
+<br id='about' />
+<br />
+
+<div className=" mb-8 px-4 m-auto max-w-7xl flex gap-4  w-full items-center justify-evenly max-md:flex-col" >
 <div className="flex flex-col gap-2 my-4">
   <div className=" flex items-center gap-6 max-w-md max-md:flex-col-reverse">
     <Image src="/images/headshot-4.jpg" width={80} height={10}  alt="Ari headshot" className="rounded-full border-solid border-2 border-violet-950"/>
@@ -67,6 +70,8 @@ export default function Home() {
 
 </div>
 
+<br id="services" />
+<br />
 
 
 
@@ -77,7 +82,11 @@ export default function Home() {
 
 <Services />
 </div>
-<h2 className="font-bold text-2xl m-auto px-4 w-full text-center my-6" id="faq">Frequently Asked Questions</h2>
+
+<br id="faq" />
+<br />
+
+<h2 className="font-bold text-2xl m-auto px-4 w-full text-center mb-6" >Frequently Asked Questions</h2>
 
 <div className="px-4 items-center justify-center flex">
 
@@ -114,10 +123,14 @@ export default function Home() {
 
 </div>
 
-<div className="bg-[url('/images/contact-design.svg')] bg-cover bg-top w-full py-28">
+<div className="bg-[url('/images/contact-design.svg')] bg-cover bg-top w-full py-28 flex items-center justify-center flex-col">
+
+<br id="contact" />
+<br />
 
 
-<h2 className="font-bold text-2xl m-auto px-4 w-full text-center my-2  " id="contact">Contact</h2>
+
+<h2 className="font-bold text-2xl m-auto px-4 w-full text-center my-2  ">Contact</h2>
 
 <p className="text-center text-gray-400 mb-8 ">Take a step forward in your fitness journey today</p>
 
