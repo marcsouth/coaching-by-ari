@@ -5,13 +5,11 @@ import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, Navba
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = [
-    "About",
-    "Services",
-    "Testimonials",
-    "Contact",
-  ];
 
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
   return (
     <Navbar
       isBordered
@@ -24,8 +22,8 @@ export default function Nav() {
         <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
 
         <NavbarBrand >
-          <Link href='/' className="text-white">
-          <p className="font-bold ">COACHING BY  ARI</p>
+          <Link href='/' className="text-white" >
+          <p className="font-bold ">COACHING BY ARI</p>
           </Link>
         </NavbarBrand>
       </NavbarContent>
@@ -39,7 +37,7 @@ export default function Nav() {
 
 
         <NavbarContent className="hidden sm:flex gap-12 " justify="center">
-        <NavbarItem >
+        <NavbarItem  >
           <Link className="text-white" href="#about">
             About
           </Link>
@@ -58,7 +56,7 @@ export default function Nav() {
       
 
       <NavbarContent justify="end">
-        <NavbarItem>
+        <NavbarItem >
           <Button as={Link} color="secondary" href="#contact" variant="flat" className="text-white">
             Contact
           </Button>
@@ -67,45 +65,49 @@ export default function Nav() {
 
       <NavbarMenu className="bg-transparent dark">
         {/* Hard code each link */}
-        <NavbarMenuItem>
+        <NavbarMenuItem >
           <Link
             className="w-full text-white dark"
             size="lg"
             href="#about"
+            onClick={closeMenu}
           >
             About
           </Link>
         </NavbarMenuItem>
-        <NavbarMenuItem>
+        <NavbarMenuItem onClick={closeMenu}>
           <Link
             className="w-full text-white dark"
             size="lg"
             href="#services"
+            onClick={closeMenu}
           >
             Services
           </Link>
         </NavbarMenuItem>
-        <NavbarMenuItem>
+        <NavbarMenuItem onClick={closeMenu}>
           <Link
             className="w-full text-white dark"
             size="lg"
             href="#faq"
+            onClick={closeMenu}
           >
             F.A.Q
           </Link>
         </NavbarMenuItem>
-        <NavbarMenuItem>
+        <NavbarMenuItem onClick={closeMenu}>
           <Link
             className="w-full text-white dark"
             size="lg"
-            href="#faq"
+            href="#contact"
+            onClick={closeMenu}
           >
             Contact
           </Link>
         </NavbarMenuItem>
 
         {/* Add custom links */}
-        <NavbarMenuItem>
+        <NavbarMenuItem onClick={closeMenu}>
           <Link
           showAnchorIcon
             className="w-full dark"
@@ -113,11 +115,12 @@ export default function Nav() {
             href='https://www.tiktok.com/@amwbrah'
             color='secondary'
             isExternal
+            onClick={closeMenu}
           >
             Tik Tok
           </Link>
         </NavbarMenuItem>
-        <NavbarMenuItem>
+        <NavbarMenuItem >
           <Link
           showAnchorIcon
             className="w-full dark"
@@ -125,6 +128,7 @@ export default function Nav() {
             color='secondary'
             href='https://www.instagram.com/aesthetics.by.ari/'
             isExternal
+            onClick={closeMenu}
           >
             Instagram
           </Link>
@@ -137,6 +141,7 @@ export default function Nav() {
             color='secondary'
             href="https://www.youtube.com/@Amwbrah"
             isExternal
+            onClick={closeMenu}
           >
             Youtube
           </Link>

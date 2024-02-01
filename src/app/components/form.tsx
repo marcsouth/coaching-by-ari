@@ -1,8 +1,12 @@
-import React from 'react'
+import { Button } from "@nextui-org/react"
+
+
 
 export default function form() {
   return (
-    <form className='flex flex-col max-w-sm w-full m-auto px-4'>
+    <div className=" max-w-sm p-4 bg-white-0 rounded-xl mx-auto bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50  border-dark-purple border-2">
+
+    <form className='flex flex-col max-w-sm  m-auto gap-2 '>
 
     <input type="text" placeholder="Name" className="border-2 border-gray-300 p-2 rounded-lg m-2"/>
 
@@ -10,11 +14,10 @@ export default function form() {
 
     <textarea placeholder="Message" className="border-2 border-gray-300 p-2 rounded-lg m-2"/>
 
-    <button className="border-2 border-gray-300 p-2 rounded-lg m-2">Submit</button>
-
-
-
+    <Button className="border-2 border-gray-300 p-2 rounded-lg m-2" color="secondary">Submit</Button>
 
     </form>
+
+    </div>
   )
 }

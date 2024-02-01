@@ -7,7 +7,7 @@ import { Link } from "@nextui-org/link"
 export default function footer() {
   return (
     <>
-    <footer className="w-full bg-black px-4 mt-10">
+    <footer className="w-full bg-black px-4  border-t-2 border-dark-purple py-8">
 
         <div className="flex flex-wrap w-full justify-center items-center gap-12 mb-6 ">
 
@@ -31,7 +31,7 @@ export default function footer() {
 
         </div>
 
-        <div className="flex w-full px-4 max-w-md m-auto items-center justify-evenly mb-6"> 
+        <div className="flex w-full px-4 max-w-md m-auto items-center flex-col gap-4 text-center mb-6"> 
         <Link color="secondary" isExternal >Privacy Policy </Link>
         <Link color="secondary" isExternal >Terms of Service </Link>
         </div>
