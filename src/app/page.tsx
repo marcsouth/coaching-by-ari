@@ -31,7 +31,11 @@ export default function Home() {
     <Image src="/images/headshot-4.jpg" width={80} height={10}  alt="Ari headshot" className="rounded-full border-solid border-2 border-violet-950"/>
     <h2 className="font-bold text-2xl max-md:text-center ">A Coach, Bodybuilder and a dedicated<span className="bg-gradient-to-r from-sky-400 to-violet-600 bg-clip-text text-transparent"> Mentor </span> </h2>
     </div>
-    <p className="max-w-md max-md:text-center max-md:mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p className="max-w-md max-md:text-center max-md:mt-4">Ari , it’s been a true pleasure and an honor getting to know someone as unique, beautiful and smart as yourself. You’re truly one of one. Your strength and dedication is something to be admired greatly. Not only that but your ability to brighten someone’s cloudiest day with that smile of yours. Not only
+Are you strong and dedicated but also
+Incredibly talented in so many ways. You never fail to amaze me. I hope this site helps you on your fitness and coaching journey. Peace and love x2 
+
+- Mayor Mike </p>
 
 </div>
 
